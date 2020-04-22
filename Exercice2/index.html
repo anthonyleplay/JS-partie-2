@@ -3,49 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exo 2 Anthony </title>
+    <title>Exo 2 p2 Anthony </title>
 </head>
 
 <body>
-    <h1> Exercice 2 Devoir</h1>
+    <h1> Exercice 2 p2 Devoir</h1>
 
-    <p>Créer une variable firstPart qui contiendra la première partie d'une phrase et une variable lastPart
-         qui contiendra la dernière partie de la même phrase. Les afficher ensemble dans une boîte de dialogue.</p>
+    <p>Demander à l'aide d'une boîte de dialogue l'âge d'un utilisateur. S'il a plus de 18 ans, lui afficher <i>Vous êtes majeur</i>, sinon lui afficher <i>Vous êtes mineur</i>.</p>
 
 
 
 
 <script>
-    var firstPart ='j\'me presente je m\'appelle Henry';
-    var lastPart =' j\'aimerais bien reussir ma vie';
-    alert(firstPart + lastPart);
-</script>
+    var number = prompt('quel est votre age');
+    var majeur = "Vous êtes MAJEUR"
+    var mineur = "Vous êtes MINEUR"
 
-</body>
-
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exo 1 Anthony </title>
-</head>
-
-<body>
-    <h1> Exercice 1 Devoir</h1>
-
-    <p>Créer une variable <b>number </b>et lui donner une valeur. A l'aide d'une condition, si ce nombre est supérieur à 21, afficher un message.</p>
-
-
-
-
-<script>
-    var number = prompt('donner un nombre');
-    var number = parseInt(numberA, 10);
-    var message = "le nombre est plus grand que 21"
-    if (number > 21) {
-        alert(message);
+    if (number > 17) {
+        alert(majeur);
+    }
+    else {
+        alert(mineur);
     }
 
     </script>
