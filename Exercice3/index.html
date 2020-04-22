@@ -9,22 +9,23 @@
 <body>
     <h1> Exercice 3 Devoir</h1>
 
-    <p>Créer :
-        <ul>
-            <li>une variable name qui contiendra une chaîne de caractère</li>
-            <li>une variable age qui contiendra un nombre entier</li>
-            <li>une variable city qui contiendra une chaîne de caractères.</li>    
-        </ul>
-    Les afficher dans une boîte de dialogue, dans une phrase comme : Bonjour, je m'appelle Jean, j'ai 30 ans et j'habite Paris.</p>
+    <p>Demander un nombre à l'utilisateur. S'il est pair afficher Le nombre est pair, sinon afficher Le nombre est impair.</p>
 
 
 
 
 <script>
-    var name ='Jean';
-    var age = '30';
-    var city ='Paris';
-    alert('Bonjour, je m\'appelle '+ name +', j\'ai '+ age +' ans et j\'habite '+ city +'.');
+    var number = +(prompt('nombre'));
+    var pair = "Le nombre est pair"
+    var impair = "Le nombre est impair"
+
+    if (number%2 == 0) {
+        alert(pair);
+    }
+    else {
+        alert(impair);
+    }
+
 </script>
 
 </body>
