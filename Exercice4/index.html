@@ -22,15 +22,26 @@
 
 
 <script>
-    var number = +(prompt('nombre'));
-    var pair = "Le nombre est pair"
-    var impair = "Le nombre est impair"
+    var note = +(prompt('donner une Note entre 0 et 10'));
 
-    if (number%2 == 0) {
-        alert(pair);
+
+    if (note < 0) {
+        alert("NOPE Réessayer");
     }
-    else {
-        alert(impair);
+    else if (note < 4){
+        alert("Nul");
+    }
+    else if (note < 6){
+        alert("Moyen");
+    }
+    else if (note < 9){
+        alert("Bien");
+    }
+    else if (note == 10){
+        alert("Exelent");
+    }
+    else{
+        alert("NOPE Réessayer");
     }
 
 </script>
