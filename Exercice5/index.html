@@ -3,24 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exo 5 Anthony </title>
+    <title>Exo 5 p2 Anthony </title>
 </head>
 
 <body>
-    <h1> Exercice 5 Devoir</h1>
+    <h1> Exercice 5 p2 Devoir</h1>
 
-    <p>Demander deux nombres à un utilisateur. Les additionner et les afficher avec une phrase rappelant le calcul dans la console.</p>
+    <p>Créer une variable <b>day</b> et lui attribuer une valeur entre 1 et 7.<br>
 
+        A l'aide d'un switch, afficher :
+    <ul>   
+        <li>Lundi si <b>day</b> est égal à 1</li>
+        <li>Mardi si <b>day</b> est égal à 2</li>
+        <li>Mercredi si <b>day</b> est égal à 3</li>
+        <li>Jeudi si <b>day</b> est égal à 4</li>
+        <li>Vendredi si <b>day</b> est égal à 5</li>
+        <li>Samedi si <b>day</b> est égal à 6</li>
+        <li>Dimanche si <b>day</b> est égal à 7</li>
+    </ul>
+    </p>
 
 
 
 <script>
-    var numberA = prompt('donner un nombre (A)');
-    var numberB = prompt('donner un 2eme nombre (B)');
-    var numberA = parseInt(numberA, 10);
-    var numberB = parseInt(numberB, 10);
-    var total = (numberA + numberB);
-    alert('A + B = '+total);
+    var day = +(prompt('donne un chiffre entre 1 et 7'));
+    if (day < 1) {
+        alert("NOPE Réessayer")
+    }
+    else if (day > 7) {
+        alert("NOPE Réessayer")
+    }
+    else{
+        switch (day) {
+        case 1:
+            day = alert("lundi");
+            break;
+        case 2:
+            day = alert("Mardi");
+            break;
+        case 3:
+            day = alert("Mercredi");
+            break;
+        case 4:
+            day = alert("Jeudi");
+            break;
+        case 5:
+            day = alert("Vendredi");
+            break;
+        case 6:
+            day = alert("samedi");
+            break;
+        case  7:
+            day = alert( "gromanche");
+        }
+    }
+
 </script>
 
 </body>
