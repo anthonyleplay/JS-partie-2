@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,53 +13,65 @@
     <p>Créer une variable <b>day</b> et lui attribuer une valeur entre 1 et 7.<br>
 
         A l'aide d'un switch, afficher :
-    <ul>   
-        <li>Lundi si <b>day</b> est égal à 1</li>
-        <li>Mardi si <b>day</b> est égal à 2</li>
-        <li>Mercredi si <b>day</b> est égal à 3</li>
-        <li>Jeudi si <b>day</b> est égal à 4</li>
-        <li>Vendredi si <b>day</b> est égal à 5</li>
-        <li>Samedi si <b>day</b> est égal à 6</li>
-        <li>Dimanche si <b>day</b> est égal à 7</li>
-    </ul>
+        <ul>
+            <li>Lundi si <b>day</b> est égal à 1</li>
+            <li>Mardi si <b>day</b> est égal à 2</li>
+            <li>Mercredi si <b>day</b> est égal à 3</li>
+            <li>Jeudi si <b>day</b> est égal à 4</li>
+            <li>Vendredi si <b>day</b> est égal à 5</li>
+            <li>Samedi si <b>day</b> est égal à 6</li>
+            <li>Dimanche si <b>day</b> est égal à 7</li>
+        </ul>
     </p>
+    <h2>le jour est <i><span id="pouet"></span></i></h2>
+
+    <button onclick="exo5()">Réessayer</button>
+
+    <script>
+        function exo5() {
+
+            let day;
+            do {
+                day = +(prompt('donne un chiffre entre 1 et 7'));
+                if (day < 1 || day > 7 || isNaN(day)) {
+                    alert("NOPE Réessayer")
+                }
+
+            } while (day < 1 || day > 7 || isNaN(day))
 
 
+            switch (day) {
+                case 1:
+                    day = document.getElementById("pouet").innerHTML = "lundi";
+                    alert("Lundi");
+                    break;
+                case 2:
+                    day = document.getElementById("pouet").innerHTML = "Mardi";
+                    alert("Mardi");
+                    break;
+                case 3:
+                    day = document.getElementById("pouet").innerHTML = "Mercredi";
+                    alert("Mercredi");
+                    break;
+                case 4:
+                    day = document.getElementById("pouet").innerHTML = "Jeudi";
+                    alert("Jeudi");
+                    break;
+                case 5:
+                    day = document.getElementById("pouet").innerHTML = "Vendredi";
+                    alert("Vendredi");
+                    break;
+                case 6:
+                    day = document.getElementById("pouet").innerHTML = "samedi";
+                    alert("samedi");
+                    break;
+                case 7:
+                    day = document.getElementById("pouet").innerHTML = "gromanche";
+                    alert("gromanche");
 
-<script>
-    var day = +(prompt('donne un chiffre entre 1 et 7'));
-    if (day < 1) {
-        alert("NOPE Réessayer")
-    }
-    else if (day > 7) {
-        alert("NOPE Réessayer")
-    }
-    else{
-        switch (day) {
-        case 1:
-            day = alert("lundi");
-            break;
-        case 2:
-            day = alert("Mardi");
-            break;
-        case 3:
-            day = alert("Mercredi");
-            break;
-        case 4:
-            day = alert("Jeudi");
-            break;
-        case 5:
-            day = alert("Vendredi");
-            break;
-        case 6:
-            day = alert("samedi");
-            break;
-        case  7:
-            day = alert( "gromanche");
+            }
         }
-    }
-
-</script>
+    </script>
 
 </body>
 
