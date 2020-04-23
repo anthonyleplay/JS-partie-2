@@ -15,15 +15,16 @@
 
 
 <script>
-    var number = prompt('quel est votre age');
-    var majeur = "Vous êtes MAJEUR"
-    var mineur = "Vous êtes MINEUR"
+    var age = +(prompt('quel est votre age'));
 
-    if (number > 17) {
-        alert(majeur);
+    if (isNaN(age)){
+        alert("NOPE Réessayer")    
+    }
+    else if (age > 17) {
+        alert("Vous êtes MAJEUR");
     }
     else {
-        alert(mineur);
+        alert("Vous êtes MINEUR");
     }
 
     </script>

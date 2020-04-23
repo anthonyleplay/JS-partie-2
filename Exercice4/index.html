@@ -25,7 +25,7 @@
     var note = +(prompt('donner une Note entre 0 et 10'));
 
 
-    if (note < 0) {
+    if (note < 0 || isNaN(note) || note > 10) {
         alert("NOPE Réessayer");
     }
     else if (note < 4){
@@ -37,11 +37,8 @@
     else if (note < 9){
         alert("Bien");
     }
-    else if (note == 10){
+    else if(note == 10){
         alert("Exelent");
-    }
-    else{
-        alert("NOPE Réessayer");
     }
 
 </script>

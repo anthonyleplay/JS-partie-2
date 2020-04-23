@@ -16,14 +16,19 @@
 
 <script>
     var number = +(prompt('nombre'));
-    var pair = "Le nombre est pair"
-    var impair = "Le nombre est impair"
+    var pair = "Le nombre est PAIR"
+    var impair = "Le nombre est IMPAIR"
 
-    if (number%2 == 0) {
+    if (isNaN(number)){
+        alert("NOPE Réessayer")    
+    }
+    else if (number%2 == 0) {
         alert(pair);
+        console.log(pair);
     }
     else {
         alert(impair);
+        console.log(impair);
     }
 
 </script>
